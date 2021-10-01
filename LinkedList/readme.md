@@ -1,0 +1,4 @@
+LinkedList 
+  -SinglyLinkedList
+  -DoublyLinkedList
+  -CircularLinkedList
