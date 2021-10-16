@@ -18,7 +18,7 @@
 - Second, make prec(token) function to determine if it is operator or operand or nullspace. Also we can know the order of operators.<br>
 - If given exp[i] is operand, check the next value exp[i+1] is operand or not. Then calculate until the next index's value is not operand. After that, push to the valueStack.<br>
 - If given exp[i] is operator, check if the operatorStack is empty or not. If empty, push it. If not empty, compare the order of given operator with top() of operatorStack.<br>
-- Check the order and if it is needed, do operation with 2 values and operator ; using doOperation() function to make clean code.<br><br>
+- Check the order and if it is needed, do operation with 2 values and operator ; using doOperation() function to make clean code.<br>
 - After doing operation, we have to check operatorStack one more time to compare the order of operations ; using reculsive calling.<br>
 - If the exp[i] is the end of exp string, push '$' operator which order is the lowest ; to get all the left value and operator.<br>
 - The final value;result we want to get is in the valueStack. Pop() and return.<br>
