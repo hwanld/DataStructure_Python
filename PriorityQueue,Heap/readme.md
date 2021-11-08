@@ -14,9 +14,10 @@
 
 -Second, Insert (key, value) pair from list to heap.
 
--Third, do operations while there is only one pair in the heap.
--Execute remove_min twice, create a new pair and insert new pair into the heap.
--New pair is the result of adding two result of remove_min.
--Using + operation at the value string. Now it's easy to implement adding two values.
+-Third, do operations while there is only one pair in the heap.<br>
+-Execute remove_min twice, create a new pair and insert new pair into the heap.<br>
+-New pair is the result of adding two result of remove_min.<br>
+-Using + operation at the value string. Now it's easy to implement adding two values.<br>
 
 -Finally, return the last entry of the heap.
+
