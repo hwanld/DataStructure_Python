@@ -43,7 +43,7 @@ def generate_code(node, code_table, prefix=""):
         generate_code(node.left(), code_table, prefix + '0')
     # If node has right, call recursively for the right subtree with '1'+prefix,
     if node.right() is not None:
-        generate_code(node.right(), code_table, '1' + prefix)
+        generate_code(node.right(), code_table, prefix + '1')
     # If node is external, append (alphabet, prefix) into the code_table."""
     if node.left() is None and node.right() is None:
         code_table.append((node.element(), prefix))
@@ -71,12 +71,13 @@ def gen_freq_table(s):
 
 
 if __name__ == "__main__":
-    s = "abracadabra"
+    # s = "aaaabbbbccccddddeeee"
     # I will test your code with
-    # s = "In computer science and information theory, a Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression."
+    s = "In computer science and information theory, a Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression."
 
     # f will be or looks like [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
     f = gen_freq_table(s)
+    print(f)
 
     # t is a pair of (key, huffman code tree) for the frequency table f
     t = build_huffman_tree(f)
